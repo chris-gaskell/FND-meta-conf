@@ -1,0 +1,95 @@
+---
+format: 
+  revealjs:
+    #title: "Psychological Interventions for Functional / Dissociative Seizures (FDS): Meta-Analyses & Future Directions"
+    contributor: "Dr. Chris Gaskell"
+    author: "Dr. Chris Gaskell"
+    institute: |
+      Neuropsychology <br>
+      North Staffs Combined Healthcare
+    chalkboard: true
+    scrollable: true
+    theme: [simple, custom.scss] # Specify additional theme and custom styles
+    preview-links: false
+    preload-iframes: true
+    footer: "Treatments for FDS"
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    footnotes-hover: true
+    reference-location: document
+    title-slide: false
+---
+
+::: center
+## Psychological Interventions for Functional / Dissociative Seizures (FDS): Meta-Analyses & Future Directions
+
+<br>
+
+#### Dr. Chris Gaskell
+
+Senior Clinical Psychologist \| Clinical Academic
+
+North Staffordshire Combined Healthcare NHS Trust
+:::
+
+## Introduction / Aim
+
+-   **Functional / Dissociative Seizures (FDS)** involuntary response to internal or external triggers associated with dysfunctional emotion regulation.
+-   Psychological tretaments highly recommended. Common treatments include: **CBT, Psychodynamic Therapy, ACT**.
+-   **Current uncertainties**:
+    -   **How** effective?
+    -   Under **what** conditions?
+    -   Are **improvements** durable
+    -   **Which** type of outcome responds is most sensitive to change
+-   We attempted to answer these questions using a series of meta-analytic investigations.
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+### Methods
+
+-   2 x systematic searches (4 databases)
+-   All studies reporting outcomes for a psychological intervention.
+-   Seizure outcomes, non-seizure outcomes
+-   A series of multi-variate meta-analyses:
+    -   Treatment effects
+    -   Follow up effects
+:::
+
+::: {.column width="50%"}
+### Results
+
+-   Systematic Search identified 44 studies
+    -   171 non-seizure; 135 seizure; N = 1300.
+-   Seizure improvement = 66% (75% at follow up).
+-   Seizure freedom = 40% (36% at follow up).
+-   Moderate size effects (*d* = .51) across a range of non seizure outcomes.
+-   Medium / High risk of bias across the majority of included studies.
+-   Limited evidence for specific moderator variables.
+:::
+:::
+
+## Conclusions
+
+-   Psychological treatments **improve** seizure and non-seizure outcomes
+-   Improvements appear **durable**
+-   **Limitations**:
+    -   Meta-analysis is observational - does not suppose causality
+    -   High or medium bias risk across studies; "low" quality per GRADE criteria
+-   **Future Directions**:
+    -   Further experimental evidence required
+    -   Need for research on **durability** of psychological treatment benefits
+
+## **QR Codes**
+
+::: {style="display: flex; justify-content: space-around;"}
+<img src="qr-effectiveness.png" style="width: 300px;"/> <img src="qr-seizure.png" style="width: 300px;"/>
+:::
+
+<p style="text-align: center;">
+
+<strong>QR Codes:</strong> Links to open access version of the two associated meta-analyses: psychological outcomes (left); seizure outcomes (right)
+
+</p>

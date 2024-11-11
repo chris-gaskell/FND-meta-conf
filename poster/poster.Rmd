@@ -1,0 +1,282 @@
+---
+main_topsize: 0.13 #percent coverage of the poster
+main_bottomsize: 0.05
+#ESSENTIALS
+title: ' '
+primary_colour: "#800020"
+secondary_colour: "#800020"
+author:
+  - name: '**Gaskell, Chris**'
+    affil: 1, 2
+    main: true
+    orcid: '0000-0002-7589-5246'
+    twitter: chrisgaskell92 
+    email: c.gaskell@sheffield.ac.uk
+  - name: 'Power, Niall'
+    affil: 1, 3
+    main: false
+  - name: 'Novakova, Barbora'
+    main: false
+    affil: 4
+  - name: 'Simmonds-Buckley, Melanie'
+    main: false
+    affil: 1, 5
+  - name: 'Wesley T, Kerr'
+    main: false
+    affil: 6, 7
+  - name: 'Reuber, Markus'
+    main: false
+    affil: 8
+  - name: 'Kellett, Stephen'
+    affil: 1, 4
+    main: false
+  - name: 'Rawlings, Gregg'
+    main: false
+    affil: 1, 3
+affiliation:
+  - num: 1
+    address: Clinical and Applied Psychology Unit, University of Sheffield, UK
+  - num: 2
+    address: North Staffordshire Combined Healthcare NHS Foundation Trust.
+  - num: 3
+    address: South West Yorkshire Partnership NHS Foundation Trust, UK.
+  - num: 4
+    address: Health and Wellbeing Service, NHS Sheffield Talking Therapies, Sheffield Health and Social Care NHS Foundation Trust, UK.
+  - num: 5
+    address: Rotherham Doncaster and South Humber NHS Foundation Trust, UK.
+  - num: 6
+    address: Departments of Neurology & Biomedical Informatics, University of Pittsburgh, Pittsburgh, Pennsylvania, USA.
+  - num: 7
+    address: Department of Neurology, University of Michigan, Ann Arbor, Michigan, USA.
+  - num: 8
+    address: Academic Neurology Unit, University of Sheffield, Royal Hallamshire Hospital, Glossop Road, S10 2JF, Sheffield, UK
+main_findings:
+  - "**Psychological Interventions for Functional / Dissociative Seizures  (FDS):**<br>Meta-Analyses & Future Directions"
+output: 
+  posterdown::posterdown_betterport:
+    self_contained: true
+    pandoc_args: --mathjax
+    number_sections: false
+knit: pagedown::chrome_print
+bibliography: packages.bib
+csl: apa7.csl
+link-citations: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
+
+# Introduction
+
+-   **Functional / Dissociative Seizures (FDS):** can be conceptualised as an involuntary response to internal or external triggers associated with dysfunctional emotion regulation. These have also been referred to as non-epileptic attacks or Psychogenic Non-Epileptic Seizures (PNES).
+
+-   **Treatment:** Psychological interventions, such as Cognitive Behavioural Therapy (CBT), Psychodynamic psychotherapy and Acceptance and Commitment Therapy (ACT), are the most commonly recommended treatments for adults presenting with FDS.
+
+Although a range of trials have been published, there is still uncertainty regarding:
+
+1.  How effective psychological treatments are for FDS
+
+2.  What treatment conditions are most conducive to treatment effectiveness (i.e., group vs individual therapy, the use of different therapeutic modalities)
+
+3.  Who is more likely to benefit from therapy
+
+4.  How durable clinical improvements are following treatment completion
+
+5.  Which outcome measures are most sensitive to treatment-related change (i.e., seizure-related outcomes vs non-seizure related outcomes).
+
+We set out to address these questions via a systematic review of the evidence and a series of meta-analytic analyses.
+
+# Methods
+
+-   Our reviews [@gaskell2023a; @gaskell2024] followed PRISMA guidelines for systematic reviews and meta-analyses.
+
+-   Systematic search of four electronic databases (CINAHL, PsychINFO, Medline, and Cochrane Reviews) was conducted in February 2022, with a repeat search in 2023 to allow for additional analyses.
+
+-   Studies must have included adults with FDS receiving any form of psychological therapy and where self-reported outcome measures were administered to measure treatment effectiveness.
+
+-   Use of Cochrane Collaboration tool (ROB-2) to assess risk of bias.
+
+-   Further evidence quality appraisal using the Grading of Recommendations Assessment, Development, and Evaluation (GRADE) approach.
+
+-   All analyses were conducted in R using the metafor [@metafor] package.
+
+-   Meta-analytic procedures included a multi-variate approach, accounting for dependent outcomes.
+
+# Results
+
+-   Data from up to `1300` individuals with FDS across `44 studies` were analysed.
+
+-   Data points for `171 non-seizure` related and `135 seizure`-related outcomes were analysed.
+
+-   Seizure frequency was the most common outcome measure; however, there is great variation in how this is measured.
+
+-   Most studies were categorised as “high” or “medium” risk of bias.
+
+-   Meta-analyses were judged to be “low” quality based on GRADE criteria.
+
+-   None of the included moderators were significant for seizure frequency; for non-seizure related outcomes, the focus of the measure (e.g., measure of functioning vs HRQoL; Fig 1) and type of treatment significantly moderated the outcome.
+
+-   Treatments with a behavioural focus were associated with greater outcomes, although the number of trials was limited. Age, gender, RoB or interventions characteristics (delivery format, delivery setting or treatment length) were not significant moderators.
+
+-   Psychological interventions appear to be most effective for the reduction, as opposed to cessation, of seizure frequency. On the group level, treatment was associated with an improvement of 6.5 seizures per month.
+
+## Patient Reported Outcomes
+
+```{r, fig.height= 7}
+library(ggplot2)
+library(forcats)
+
+data <- data.frame(
+  Category = forcats::fct_inorder(c("Functioning", "Seizure Frequency", "Mental Health",
+                                     "Non-Specific Factors", "Dissociation & Somatoform", "Health Related Quality of Life")),
+  Value =    c(0.78, 0.53, 0.52, 0.41, 0.41, 0.36),
+  CI_lower = c(0.50, 0.23, 0.39, 0.08, 0.28, 0.17),  # Example lower CI bounds
+  CI_upper = c(1.07, 0.83, 0.65, 0.73, 0.54, 0.55)   # Example upper CI bounds
+)
+
+# Create a bar plot with confidence intervals
+ggplot(data, aes(x = Category, y = Value)) +
+  geom_bar(stat = "identity", fill = "#800020") +  # Use the specified color
+  geom_errorbar(aes(ymin = CI_lower, ymax = CI_upper), width = 0.2, color = "black") +  # Add error bars
+  labs(
+    title = "Figure 1: Comparative Outcomes\nof Treatment across Different Domains",
+    x = NULL, #"Outcome Domain",
+    y = "Cohen's d",
+    caption = "Note. d = 0.2-0.5 = small; 0.5-0.8 = medium; ≥ 0.8 = large.
+") +
+  scale_x_discrete(labels = scales::label_wrap(15)) +
+  theme_minimal() +
+  coord_flip() +
+  theme(
+    text = element_text(size = 16),
+    plot.title = element_text(#family = 'Helvetica', 
+                                #color = '#666666', 
+                                #face = 'bold', 
+                                #size = 18, 
+                                hjust = 0),
+    plot.caption = element_text(#family = 'Helvetica', 
+                                #color = '#666666', 
+                                #face = 'bold', 
+                                #size = 18, 
+                                hjust = 0),
+  )
+
+
+
+```
+
+## Seizure Outcomes
+
+```{r, fig.height=5}
+library(ggplot2)
+library(dplyr)
+
+# Create data for four pie charts
+data <- data.frame(
+  category = forcats::fct_inorder(rep(c("No Change", "Improved"), times = 2)),
+  proportion = c(0.34, 0.66, 0.25, 0.75),
+  chart = forcats::fct_inorder(rep(c("Post Treatment", "Follow Up"), each = 2))
+)
+
+# Create pie charts using ggplot2
+ggplot(data, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  facet_wrap(~ chart) +
+  theme_void() +  # Removes axes and background
+  labs(fill = NULL) + 
+  theme(legend.position = "bottom") +
+  ggplot2::labs(title = "Figure 2: % of People Showing Seizure Improvement\n(≥ 50% Less Seizures).") +
+  scale_fill_manual(values = c("No Change" = "grey", "Improved" = "#800020")) +
+  geom_text(aes(label = scales::percent(proportion)), 
+            position = position_stack(vjust = 0.5), 
+            color = "white", size = 5) +
+  theme(
+    text = element_text(size = 16),
+    plot.title = element_text(hjust = 0),
+    plot.caption = element_text(hjust = 0),
+    strip.text = element_text(size = 16),
+    legend.text = element_text(size = 16),
+  )
+
+```
+
+```{r, fig.height=5}
+library(ggplot2)
+library(dplyr)
+
+# Create data for four pie charts
+data <- data.frame(
+  category = forcats::fct_inorder(rep(c("No Change", "Freedom"), times = 2)),
+  proportion = c(0.60, 0.40, 0.64, 0.36),
+  chart = forcats::fct_inorder(rep(c("Post Treatment", "Follow Up"), each = 2))
+)
+
+# Create pie charts using ggplot2
+ggplot(data, aes(x = "", y = proportion, fill = category)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  facet_wrap(~ chart) +
+  theme_void() + # Removes axes and background``
+  labs(fill = NULL) + 
+  theme(legend.position = "bottom") +
+  labs(title = "Figure 3: % Showing Seizure Freedom.") +
+  scale_fill_manual(values = c("No Change" = "grey", "Freedom" = "#800020")) +
+  geom_text(aes(label = scales::percent(proportion)), 
+            position = position_stack(vjust = 0.5), 
+            color = "white", size = 5) +
+  theme(
+    text = element_text(size = 16),
+    plot.title = element_text(#family = 'Helvetica', 
+                                #color = '#666666', 
+                                #face = 'bold', 
+                                #size = 18, 
+                                hjust = 0),
+    plot.caption = element_text(#family = 'Helvetica', 
+                                #color = '#666666', 
+                                #face = 'bold', 
+                                #size = 18, 
+                                hjust = 0),
+  ) +
+  theme(
+    text = element_text(size = 16),
+    plot.title = element_text(hjust = 0),
+    plot.caption = element_text(hjust = 0),
+    strip.text = element_text(size = 16),
+    legend.text = element_text(size = 16),
+  )
+
+```
+
+# Conclusions
+
+-   This body of work represents the most comprehensive review of the studies investigating the effectiveness of psychological interventions for FDS.
+
+-   Findings suggest psychological treatments are associated with improvements in seizure-related and non-seizure-related outcomes.
+
+-   While several moderator analyses could be performed, these findings should be interpreted with caution recognising the limited amount of data that could be included and the observational nature of analyses.
+
+-   While there is a considerable number of trials, the variability in research methodologies and the reporting of findings hindered some attempts at collating the results.
+
+-   Further research on the most appropriate measure to capture treatment-related change in people with FDS is needed.
+
+-   Future research is required to establish if psychological outcomes is maintained at follow up.
+
+::: {style="display: flex; justify-content: space-around;"}
+<img src="qr-effectiveness.png" style="width: 300px;"/> <img src="qr-seizure.png" style="width: 300px;"/>
+:::
+
+<p style="text-align: center;">
+
+<strong>QR Codes:</strong> Links to open access version of the two associated meta-analyses: psychological outcomes (left); seizure outcomes (right)
+
+</p>
+
+# References
