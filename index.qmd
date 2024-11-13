@@ -51,13 +51,13 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 
 ## Introduction / Aim
 
--   **Functional / Dissociative Seizures (FDS)**: Paroxysmal episodes superficially resembling epileptic seizures or syncope (Rawlings & Reuber, 2016).
+-   **Functional / Dissociative Seizures (FDS)**: Paroxysmal episodes superficially resembling epileptic seizures or syncope (Rawlings & Reuber, 2016)
 -   Psychological treatments are effective (Carlson & Nicholson-Perry, 2017) and frequently recommended
 -   However, there remain **uncertainties**:
     -   **How** effective?
     -   Under **what** conditions?
     -   Are **improvements** durable
-    -   **Which** type of outcome responds is most sensitive to change
+    -   **Which** type of outcome is most sensitive to change
 -   We attempted to answer each of these using a series of meta-analytic investigations.
 
 ::: notes
@@ -91,10 +91,10 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 ------------------------------------------------------------------------
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="38%"}
 ### Methods
 
--   Systematic search (4 databases)
+-   Systematic search
 -   Studies including a psychological intervention
     -   **Seizure** outcomes, or
     -   **Non-seizure** outcomes
@@ -103,7 +103,7 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
     -   Follow up effects
 :::
 
-::: {.column width="60%"}
+::: {.column width="62%"}
 ### Results
 
 -   44 studies (N = 1300)
