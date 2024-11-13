@@ -21,8 +21,8 @@ format:
     title-slide: false
 ---
 
-::: center
-## Psychological Interventions for Functional / Dissociative Seizures (FDS): Meta-Analyses & Future Directions
+::: {style="text-align: center;"}
+## The Effectiveness of Psychological Interventions for Functional / Dissociative Seizures: A Series of Meta-Analyses
 
 <br>
 
@@ -31,60 +31,158 @@ format:
 Senior Clinical Psychologist \| Clinical Academic
 
 North Staffordshire Combined Healthcare NHS Trust
+
+<br>
+
+#### **Collaborators:**
+
+Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. Wesley T. Kerr \| Prof. Markus Reuber \| Dr. Stephen Kellett \| Dr. Gregg Rawlings
+:::
+
+::: notes
+**Introduction:**
+
+-   Clin Psy working in Neuro.
+
+-   Clinical academic.
+
+-   One of my clinical interests is FDS, and research interest is effectiveness.
 :::
 
 ## Introduction / Aim
 
--   **Functional / Dissociative Seizures (FDS)**: an involuntary response to internal or external triggers associated with dysfunctional emotion regulation
--   Psychological tretaments highly recommended. Common treatments include: **CBT, Psychodynamic Therapy, ACT**
--   **Current uncertainties**:
+-   **Functional / Dissociative Seizures (FDS)**: Paroxysmal episodes superficially resembling epileptic seizures or syncope (Rawlings & Reuber, 2016).
+-   Psychological treatments are effective (Carlson & Nicholson-Perry, 2017) and frequently recommended
+-   However, there remain **uncertainties**:
     -   **How** effective?
     -   Under **what** conditions?
     -   Are **improvements** durable
     -   **Which** type of outcome responds is most sensitive to change
 -   We attempted to answer each of these using a series of meta-analytic investigations.
 
+::: notes
+-   FDS have been known as many terms in there past.
+
+-   Some of the more recent, that you may be more familiar with include PNES, NEAD.
+
+-   FDS has now emerged as the favored term by the ILAE.
+
+-   Psychologists, particularly those of us in neuro, will have readily come into contact with patients who have FDS.
+
+-   This is because there is a great deal of clinical wisdom, and thankfully, some empirical evidence, to suggest that psychotherapy is an effective treatment for FDS.
+
+-   This has been shown across a wide variety of outcomes (seizure, and non-seizure), although much of the available evidence is practice-based.
+
+-   Despite this consensus that psychological treatments appear effective, there remains a number of uncertainties, including:
+
+    -   **How** effective?
+
+    -   Under **what** conditions?
+
+    -   For how long are **improvements** durable following treatment end
+
+    -   **Which** type of outcome responds is most sensitive to change
+
+-   Our was to attempt to shed light on each of these using meta-analysis.
+
+⏲️ 1.5 to 2 minutes.
+:::
+
 ------------------------------------------------------------------------
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="40%"}
 ### Methods
 
--   2 x systematic searches (4 databases)
--   All studies reporting outcomes for a psychological intervention.
--   **Seizure** outcomes, **non-seizure** outcomes
--   A series of multi-variate meta-analyses:
+-   Systematic search (4 databases)
+-   Studies including a psychological intervention
+    -   **Seizure** outcomes, or
+    -   **Non-seizure** outcomes
+-   Multi-variate meta-analyses:
     -   Treatment effects
     -   Follow up effects
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 ### Results
 
--   44 studies, N = 1300
--   135 seizure, 171 non-seizure
--   Seizure improvement = 66% (75% at follow up).
--   Seizure freedom = 40% (36% at follow up).
--   Moderate size effects (*d* = .51) across non seizure outcomes.
--   Medium / High risk of bias across studies.
--   Limited evidence for specific moderator variables.
+-   44 studies (N = 1300)
+-   306 outcomes (135 seizure; 171 non-seizure)
+-   Seizure Outcomes:
+    -   Freedom = 40% (follow up = 36%)
+    -   ≤50% Reduction = 66% (follow up = 75%)
+-   Non-seizure outcomes: *d* = .51
+-   Moderator Variables... 🤯
 :::
 :::
 
-## Main Highlights
+::: notes
+-   We conducted two sets of meta-analyses. One on seizure related outcomes, and one one outcome that were not directly seizure related.
+
+-   The reason for the separation is because meta-analysis handles the different effect-sizes that arise from these outcomes quite differently.
+
+-   For both sets of analyses, we sought to establish how effective treatments were immediately following treatment
+
+-   For seizure outcomes, which are often prioritised in outcome studies, we also sought to establish whether treatments remained effective at follow up.
+
+-   So using a pre-registered systematic search across four databases, we included all studies that treated FDS, using a psychological treatment, and reported an effect-size.
+
+-   We included effects from experimental studies and practice based studies. This is because the purpose of this review was not to assess efficacy, but rather to benchmark the degree of change that is made during treatments.
+
+-   From 44 studies representing over 1300 patients with FDS, we extracted over 300 outcomes, of which 135 were related to seizures, and 171 were not-seizure related (these tended to include anxiety, depression, daily functioning, QoL, dissociation, and other psychologically related outcomes).
+
+-   So the main findings are that
+
+    -   Following treatment
+
+        -   40% of patients achieved complete seizure remission
+
+        -   66% achieved the less stringent criterion of 50% reduction
+
+    -   For follow up
+
+        -   The rate of seizure freedom dropped slightly to 36%
+
+        -   and seizure improvement increased to 75%.
+
+    -   For non-seizure (or psychological outcomes) we observed moderate effect-sizes across outcomes.
+
+    -   We also include a large number of moderator variables to determine under which conditions. This allows us to ask, which treatment is most effective, which outcome measure shows the largest amount of change, which treatment setting...
+
+    -   I do not have time to discuss the findings for them; so for those interested, will need to come and see the poster or read the paper!
+:::
+
+------------------------------------------------------------------------
+
+### Limitations
+
+-   Meta-analysis is observational. **Does not** suppose causality
+-   High or medium bias risk across studies.
+
+### Future Directions
+
+-   Further experimental evidence required
+-   Reporting standards for measurement and reporting of seizure outcomes required.
+-   **Consensus** on key outcomes in FDS required to guide future RCTs
+
+### Take Home Message
 
 -   Psychological treatments **improve** seizure and non-seizure outcomes
 -   Improvements appear **durable**.
 
-### Limitations
+::: notes
+-   So the main findings of the review were hardly surprising; that is we found evidence that psychological treatments are effective for a large range of outcomes in FDS.
 
-  -   Meta-analysis is observational. **Does not** suppose causality
-  -   High or medium bias risk across studies.
+-   Please bear in mind the limitations of this review. It is based on observational evidence, and therefore does not allow us to make causal inferences, however that is not the purpose of the review. but rather to provide a series of benchmarks for the amount of realised changed during treatment.
 
-### Future Directions
-  -   Further experimental evidence required
-  -   Reporting standards for measurement and reporting of seizure outcomes required.
-  -   **Consensus** on key outcomes in FDS required to guide future RCTs.
+-   A further limitation is that the majority of studies included showed high risk of bias.
+
+-   In terms of future directions, more experimental evidence.
+
+-   We also feel that the area would benefit from measurement and reporting guidelines for seizure related outcomes.
+
+-   We also feel that we need some sort of consensus on which non-seizure outcomes are most vital.
+:::
 
 ## QR Codes
 
