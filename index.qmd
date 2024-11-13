@@ -19,10 +19,11 @@ format:
     footnotes-hover: true
     reference-location: document
     title-slide: false
+    incremental: false
 ---
 
 ::: {style="text-align: center;"}
-## The Effectiveness of Psychological Interventions for Functional / Dissociative Seizures: A Series of Meta-Analyses
+## The Effectiveness of Psychological Interventions for Functional / Dissociative Seizures: A Series of Meta-Analyses {background-iframe="my-iframe/index.html" background-color="#01364C" style="font-size: 30px; text-align: center;"}
 
 <br>
 
@@ -32,6 +33,7 @@ Senior Clinical Psychologist \| Clinical Academic
 
 North Staffordshire Combined Healthcare NHS Trust
 
+<br>
 <br>
 
 #### **Collaborators:**
@@ -100,7 +102,7 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
     -   **Non-seizure** outcomes
 -   Multi-variate meta-analyses:
     -   Treatment effects
-    -   Follow up effects
+    -   Follow up effects.
 :::
 
 ::: {.column width="62%"}
@@ -111,8 +113,8 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 -   Seizure Outcomes:
     -   Freedom = 40% (follow up = 36%)
     -   ≤50% Reduction = 66% (follow up = 75%)
--   Non-seizure outcomes: *d* = .51
--   Moderator Variables... 🤯
+-   Non-seizure outcomes: *d* = 0.51
+-   Moderator Variables... 🤯.
 :::
 :::
 
@@ -163,7 +165,7 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 
 -   Further experimental evidence required
 -   Reporting standards for measurement and reporting of seizure outcomes required.
--   **Consensus** on key outcomes in FDS required to guide future RCTs
+-   **Consensus** on key outcomes in FDS required to guide future RCTs.
 
 ### Take Home Message
 
