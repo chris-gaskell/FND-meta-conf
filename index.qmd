@@ -8,7 +8,7 @@ format:
       Neuropsychology <br>
       North Staffs Combined Healthcare
     chalkboard: true
-    scrollable: true
+    scrollable: false
     theme: [simple, custom.scss] # Specify additional theme and custom styles
     preview-links: false
     preload-iframes: true
@@ -159,7 +159,7 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 ### Limitations
 
 -   Meta-analysis is observational. **Does not** suppose causality
--   High or medium bias risk across studies.
+-   High or medium bias risk across studies
 
 ### Future Directions
 
@@ -188,8 +188,9 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 
 ## QR Codes
 
-::: {style="display: flex; justify-content: space-around;"}
-<img src="qr-effectiveness.png" style="width: 300px;"/> <img src="qr-seizure.png" style="width: 300px;"/>
+::: {style="display: flex; justify-content: center;"}
+<img src="qr-effectiveness.png" style="width: 300px; margin-right: 60px;"/> 
+<img src="qr-seizure.png" style="width: 300px; margin-left: 20px;"/>
 :::
 
 <p style="text-align: center;">
@@ -197,3 +198,4 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 <strong>QR Codes:</strong> Links to open access version of the two associated meta-analyses: psychological outcomes (left); seizure outcomes (right)
 
 </p>
+
