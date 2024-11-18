@@ -159,18 +159,13 @@ Dr. Niall Power \| Dr. Barbora Novakova \| Dr. Melanie Simmonds-Buckley \| Dr. W
 ### Limitations
 
 -   Meta-analysis is observational. **Does not** suppose causality
--   High or medium bias risk across studies
+-   Generally medium-to-high risk of bias shown across studies.
 
 ### Future Directions
 
 -   Further experimental evidence required
 -   Reporting standards for measurement and reporting of seizure outcomes required.
 -   **Consensus** on key outcomes in FDS required to guide future RCTs.
-
-### Take Home Message
-
--   Psychological treatments **improve** seizure and non-seizure outcomes
--   Improvements appear **durable**.
 
 ::: notes
 -   So the main findings of the review were hardly surprising; that is we found evidence that psychological treatments are effective for a large range of outcomes in FDS.
